@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+ul {
+    float: right;
+    margin-right: 25px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+header img {
+    display: block;
+    width: 15%;
+    padding-left: 25px;
+}
