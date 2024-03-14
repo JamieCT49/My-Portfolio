@@ -1,36 +1,137 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+:root {
+    --box: #0c0032;
+    --button: #3500D3;
+    --background: #240090;
+    --grey: #282828;
+
+}
+
+p {
+    color: white;
 }
 
 h1 {
     font-size: 200%;
+    color: white;
 }
 
 h2 {
     font-size: 150%;
+    color: white;
 }
 
 ul {
-    float: right;
     margin-right: 25px;
+    float: right;
 }
 
 li {
     display: inline-block;
     margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: end;
 }
 
-header {
-    background-color: purple;
+a {
     color: white;
-    padding-top: 25px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    justify-content: space-between;
+    background-color: var(--grey);
+    padding-top: 20px;
     padding-left: 25px;
+    padding-bottom: 20px;
 }
 
 header img {
-    display: block;
-    width: 15%;
-    padding-left: 25px;
+    width: 100px;
+}
+
+.banner_background {
+    background-image: url(/assets/images/pexels-felix-mittermeier-956999.jpg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--button);
+    width: 100%;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+
+div h2 {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.borderline  {
+    border-right: solid 3px white;
+}
+
+main {
+    display: flex;
+    position: absolute;
+    top: 240px;
+    bottom: 0;
+    width: 100%;
+}
+
+aside {
+    background-color: var(--grey);
+    padding: 50px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+section {
+    background-color: var(--background);
+    padding: 20px;
+}
+
+footer {
+    position: absolute;
+    padding: 20px;
+    background-color: var(--grey);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+.boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    margin-top: 50px;
+    row-gap: 30px;
+    column-gap: 20px;
+    background-color: var(--button);
+}
+
+.workcontainer {
+    border: 5px white;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--button);
+}
+
+.pushdown {
+    display: flex;
+    bottom: 300px;
 }
